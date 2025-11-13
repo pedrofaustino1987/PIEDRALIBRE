@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club de Abuelos Piedra Libre</title>
+
+    <style>
+        /* Estilos Generales */
+        body {
+            font-family: 'Georgia', serif; 
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        /* Estilos del Header Principal */
+        header {
+            background-color: #79c5a1; /* Verde menta */
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Título del Club */
+        .logo h1 {
+            margin: 0;
+            font-size: 2.5em; 
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .logo p {
+            margin: 0;
+            font-size: 1.1em;
+            font-style: italic;
+        }
+
+        /* Estilos de Navegación (Menú) */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1em;
+            font-weight: 600;
+            padding: 5px 10px;
+            transition: color 0.3s, background-color 0.3s, border-radius 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #4b8a6a; 
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        /* Estilos para el Bloque de Construcción */
+        .construction-section {
+            text-align: center; /* Centra el contenido dentro de la sección */
+            padding: 40px 20px;
+        }
+        
+        .construction-section img {
+            max-width: 40%; 
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+
+        /* Estilo para el contenido principal (ejemplo) */
+        .main-content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            display: none; 
+        }
+
+        /* ======================================= */
+        /* MEDIA QUERIES PARA RESPONSIVENESS */
+        /* ======================================= */
+
+        /* Estilos aplicados cuando el ancho de pantalla es de 768px o menos (Tabletas) */
+        @media (max-width: 768px) {
+            
+            .header-content {
+                flex-direction: column; /* Apila el logo y la navegación verticalmente */
+                align-items: center;
+            }
+
+            .logo {
+                margin-bottom: 15px; /* Espacio entre el logo y el menú */
+                text-align: center;
+            }
+
+            .logo h1 {
+                font-size: 2em; /* Reduce el tamaño del título */
+            }
+
+            nav ul {
+                justify-content: center;
+                flex-wrap: wrap; /* Permite que los elementos del menú se envuelvan si no caben */
+            }
+
+            nav ul li {
+                margin: 0 10px 10px 10px; /* Reduce y ajusta el margen del menú */
+            }
+
+            .construction-section img {
+                max-width: 60%; /* Aumentamos ligeramente la imagen para que sea visible en móvil/tablet */
+            }
+        }
+
+        /* Estilos aplicados cuando el ancho de pantalla es de 480px o menos (Móviles) */
+        @media (max-width: 480px) {
+            
+            header {
+                padding: 15px 0;
+            }
+
+            .logo h1 {
+                font-size: 1.6em; /* Más pequeña para caber en pantallas estrechas */
+            }
+            
+            .logo p {
+                font-size: 0.9em;
+            }
+
+            nav ul li {
+                width: 100%; /* Cada elemento del menú ocupa todo el ancho */
+                text-align: center;
+                margin: 5px 0;
+            }
+
+            nav ul li a {
+                display: block; /* Hace que el enlace ocupe todo el ancho del <li> */
+                padding: 10px;
+                background-color: rgba(255, 255, 255, 0.1); /* Ligero fondo para los botones de menú */
+            }
+
+            .construction-section {
+                padding: 20px 10px;
+            }
+
+            .construction-section img {
+                max-width: 85%; /* La hacemos más grande para que se vea bien en el móvil */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h1>Club de Abuelos Piedra Libre</h1>
+                <p>¡Donde la diversión y la amistad nunca se detienen! 🥳</p>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#actividades">Actividades</a></li>
+                    <li><a href="#viajes">Viajes</a></li>
+                    <li><a href="#inscripciones">Inscripciones</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="construction-section">
+        <h2>¡Estamos preparando algo grandioso!</h2>
+        <img src="img/pagina.png" alt="Página en Construcción - Volvemos pronto">
+        <p>Disculpa las molestias, el sitio oficial del Club de Abuelos Piedra Libre estará disponible muy pronto con toda nuestra programación de bailes y viajes.</p>
+    </div>
+
+
+    <div class="main-content">
+        <h2>Bienvenido al Club Piedra Libre</h2>
+        <p>Somos un espacio vibrante dedicado a nuestros abuelos...</p>
+        <p>Revisa nuestras secciones de **Actividades** y **Viajes** para ver la programación del mes. ¡Te esperamos!</p>
+    </div>
+
+</body>
+</html>
